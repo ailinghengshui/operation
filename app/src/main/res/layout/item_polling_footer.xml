@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="123dp">
+  <Button
+      android:id="@+id/bt_polling_confirm"
+      android:layout_marginTop="30dp"
+      android:background="@drawable/rect_blue_confirm"
+      android:text="@string/confirm"
+      style="?android:attr/borderlessButtonStyle"
+      android:textColor="@color/standard_white"
+      android:textSize="17sp"
+      android:layout_marginLeft="67.5dp"
+      android:layout_marginRight="67.5dp"
+       android:layout_width="match_parent"
+      android:layout_height="40dp" />
+</LinearLayout>

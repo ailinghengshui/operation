@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/llPsninfoNickname"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/standard_white"
+        >
+
+        <TextView
+            android:id="@+id/tab_me_name"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="昵称"
+            android:textSize="15sp"
+            android:textColor="@color/heavy_grey"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tab_me_value"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="hehongcan"
+            android:textSize="14sp"
+            android:lines="1"
+            android:textColor="@color/standard_grey"
+            />
+
+        <ImageView
+            android:id="@+id/iv_me_right"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:layout_width="5dp"
+            android:layout_height="8.5dp"
+            android:src="@drawable/icon_right"/>
+
+    </LinearLayout>
+</LinearLayout>

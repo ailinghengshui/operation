@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/standard_white"
+    android:id="@+id/ll_more_item_group"
+    android:paddingLeft="12dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="1"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="9.5dp"
+            android:id="@+id/tv_group_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_group"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/icon_group"
+            android:layout_width="66dp"
+            android:layout_height="58dp" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_group_name"
+                android:textColor="@color/heavy_grey"
+                android:textSize="17sp"
+                android:text="tech111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_group_note"
+                android:text="江干区孵化器2幢"
+                android:textColor="@color/heavy_grey"
+                android:textSize="12sp"
+                android:layout_marginTop="11.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="12dp"
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

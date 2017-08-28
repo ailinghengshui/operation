@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:paddingLeft="11.5dp"
+    android:gravity="center_vertical"
+    android:background="@color/standard_white"
+    android:textColor="@color/heavy_black"
+    android:textSize="17sp"
+    android:text="基础信息"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <RelativeLayout
+        android:background="@color/standard_white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_brand"
+            android:text="咖啡机品牌: 极伽"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/tv_type"
+            android:text="型号：jijia-1"
+            style="@style/detail_message_right_textView"/>
+    </RelativeLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <RelativeLayout
+        android:background="@color/standard_white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/business"
+            android:text="加盟商：锦业"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/version"
+            android:text="当前版本： 4.0.2"
+            style="@style/detail_message_right_textView"/>
+    </RelativeLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <RelativeLayout
+        android:background="@color/standard_white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_group"
+            android:text="促销分组：3.16"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/tv_menu"
+            android:text="菜单： 孵化器"
+            style="@style/detail_message_right_textView"/>
+    </RelativeLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <RelativeLayout
+        android:background="@color/standard_white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_operation"
+            android:text="运营状态：是"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/tv_lock"
+            android:text="锁定状态： 否"
+            style="@style/detail_message_right_textView"/>
+    </RelativeLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <RelativeLayout
+        android:background="@color/standard_white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_box_number"
+            android:text="粉料盒数量：6"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/tv_cup_radius"
+            android:text="纸杯口径： 80"
+            style="@style/detail_message_right_textView"/>
+    </RelativeLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>  <RelativeLayout
+        android:background="@color/standard_white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_bean_count"
+            android:text="磨豆：8.5"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:text="创建时间： 2015/08/06"
+            style="@style/detail_message_right_textView"/>
+    </RelativeLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <RelativeLayout
+        android:background="@color/standard_white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_long"
+            android:text="经度：6.2545456"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/tv_latitude"
+            android:text="纬度： 24.5245454"
+            style="@style/detail_message_right_textView"/>
+    </RelativeLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <LinearLayout
+        android:background="@color/standard_white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="是否支持Coffee Me取货:"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/tv_can_coffeeme"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/standard_grey"
+            android:text="是" />
+    </LinearLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <LinearLayout
+        android:background="@color/standard_white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="运营时间设置:"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/tv_operation_time"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/standard_grey"
+            android:text="8:00-22:00" />
+    </LinearLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <RelativeLayout
+        android:background="@color/standard_white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="64.5dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="地址:"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:maxLines="2"
+            android:singleLine="false"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/standard_grey"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/tv_location"
+            android:text="浙江省杭州市加快了电视剧发了就安打发时间阿卡丽减肥了卡机司法局案例及发动机"
+            style="@style/detail_message_left_textView"/>
+        <View
+            android:id="@+id/view_line"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_location"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_color"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+    <RelativeLayout
+        android:background="@color/standard_white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="64.5dp">
+        <TextView
+            android:text="备注:"
+            style="@style/detail_message_left_textView" />
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/standard_grey"
+            android:layout_marginLeft="50dp"
+            android:text="锦业科技有限公司内部专用福利咖啡机一台" />
+    </RelativeLayout>
+    <include layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11.5dp"/>
+
+</LinearLayout>

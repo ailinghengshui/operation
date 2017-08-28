@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/standard_white"
+    android:id="@+id/ll_item_task"
+    android:paddingLeft="12dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/iv_task"
+            android:src="@drawable/icon_fix_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_task_type"
+                    android:textColor="@color/heavy_grey"
+                    android:textSize="17sp"
+                    android:text="维修任务"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/heavy_grey"
+                    android:textSize="17sp"
+                    android:text="—"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_task_area"
+                    android:textColor="@color/heavy_grey"
+                    android:textSize="17sp"
+                    android:text="天津市市辖区"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_task_code"
+                android:text="jj544151"
+                android:textColor="@color/heavy_grey"
+                android:textSize="12sp"
+                android:layout_marginTop="11.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="12dp"
+               android:orientation="vertical"
+               android:gravity="center_vertical"
+               android:layout_width="100dp"
+               android:layout_height="match_parent">
+               <TextView
+                   android:id="@+id/tv_task_time"
+                   android:text="09:30"
+                   android:textSize="12sp"
+                   android:gravity="right"
+                   android:textColor="@color/standard_grey"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:id="@+id/tv_task_status"
+                   android:layout_marginTop="13dp"
+                   android:text="未完成"
+                   android:gravity="right"
+                   android:textColor="@color/normal_red"
+                   android:textSize="12sp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+       </RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="12dp"
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

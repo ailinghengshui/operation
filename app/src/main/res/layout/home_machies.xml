@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/standard_white"
+    android:clickable="true"
+    android:id="@+id/ll_machines_item"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="110dp">
+    <View
+        android:id="@+id/item_top_grey"
+        android:background="@color/color_little_grey"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_machines_id"
+        android:background="@drawable/shape_home_rect"
+        android:text="12"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:textSize="24sp"
+        android:textColor="@color/standard_white"
+        android:gravity="center"
+        android:layout_width="66dp"
+        android:layout_height="78dp" />
+    <LinearLayout
+         android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_machines_number"
+                android:textColor="@color/heavy_grey"
+                android:background="@drawable/rect_light_blue"
+                android:textSize="17sp"
+                android:lines="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:text="teest001"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_machines_group"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/heavy_grey"
+                android:textSize="17sp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:background="@drawable/rect_light_blue"
+                android:text="teach"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_machines_menu"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/heavy_grey"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:lines="1"
+                android:background="@drawable/rect_light_blue"
+                android:ellipsize="end"
+                android:text="菜单01"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_machines_location"
+            android:text="江干区白杨街道高科技孵化器大厅"
+            android:textSize="12dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/heavy_grey"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <include
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            layout="@layout/item_line"/>
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_machines_normal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:text="机器正常"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/color_line"
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+            <TextView
+                android:id="@+id/tv_machines_leave"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="余料充足"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/color_line"
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+            <TextView
+                android:id="@+id/tv_machines_line"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:text="网络离线"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/color_line"
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+            <TextView
+                android:id="@+id/tv_machines_lock"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:text="锁定"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/color_line"
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+            <TextView
+                android:id="@+id/tv_machines_operation"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:text="未运营"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

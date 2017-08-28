@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <LinearLayout
+        android:background="@color/standard_white"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_saleList_isTenTop"
+            android:background="@color/color_red"
+            android:layout_marginLeft="12dp"
+            android:layout_width="5dp"
+            android:layout_height="16dp" />
+        <TextView
+            android:id="@+id/tv_isTenTop"
+            android:text="销售前十名"
+            android:layout_marginLeft="4.5dp"
+            android:textColor="@color/standard_grey"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

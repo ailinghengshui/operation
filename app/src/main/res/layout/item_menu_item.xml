@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:id="@+id/ll_menu_item_container"
+    android:background="@color/standard_white"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:textSize="17sp"
+    android:text="单品属性"
+    android:paddingTop="10dp"
+    android:paddingLeft="12dp"
+    android:textColor="@color/heavy_black"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp" />
+</LinearLayout>

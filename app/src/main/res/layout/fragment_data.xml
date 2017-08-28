@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar"/>
+
+<ScrollView
+    android:background="@color/color_little_grey"
+    android:fadeScrollbars="false"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <LinearLayout
+      android:background="@color/color_little_grey"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  </LinearLayout>
+  <LinearLayout
+      android:visibility="visible"
+      android:orientation="vertical"
+      android:background="@color/colorPrimary"
+      android:gravity="center_horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:text="当天销售总金额"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_data_daily_totle"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="19.5dp"
+        android:text="¥160000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="68.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_data_daily_order"
+            android:background="@drawable/rect_data_grid"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            />
+        <TextView
+            android:id="@+id/tv_data_daily_cups"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rect_data_grid"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="5dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_data_daily_machine_count"
+            android:background="@drawable/rect_data_grid"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            />
+
+      </LinearLayout>
+
+    </LinearLayout>
+  </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_data_daily_shut_down"
+        android:background="@color/standard_white"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="当天故障次数"
+            android:textSize="15sp"
+            android:textColor="@color/heavy_grey"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_error_count"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:text="30次"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_right"
+            android:layout_width="5dp"
+            android:layout_height="8.5dp" />
+    </LinearLayout>
+  <LinearLayout
+      android:id="@+id/ll_data_daily_sale_list"
+      android:background="@color/standard_white"
+      android:layout_marginTop="10dp"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+    <TextView
+        android:text="当天销售榜"
+        android:textSize="15sp"
+        android:textColor="@color/heavy_grey"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_marginRight="6dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:text="查看详情"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginRight="12dp"
+        android:src="@drawable/icon_right"
+        android:layout_width="5dp"
+        android:layout_height="8.5dp" />
+  </LinearLayout>
+  <LinearLayout
+      android:background="@color/standard_white"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:text="销售统计"
+        android:textSize="15sp"
+        android:textColor="@color/heavy_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+  <include layout="@layout/item_line"/>
+  <LinearLayout
+      android:background="@color/standard_white"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="119.5dp">
+   <LinearLayout
+       android:id="@+id/ll_data_sale_table"
+       android:layout_weight="1"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:layout_width="0dp"
+       android:layout_height="match_parent">
+     <ImageView
+         android:background="@drawable/icon_data_sales_report"
+         android:layout_width="40dp"
+         android:layout_height="32dp" />
+     <TextView
+         android:layout_marginTop="12dp"
+         android:text="销售统计表"
+         android:textColor="@color/standard_grey"
+         android:textSize="12sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+   </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_daily_order"
+       android:layout_weight="1"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:layout_width="0dp"
+       android:layout_height="match_parent">
+     <ImageView
+         android:background="@drawable/icon_data_daily_orders"
+         android:layout_width="40dp"
+         android:layout_height="32dp" />
+     <TextView
+         android:layout_marginTop="12dp"
+         android:text="每日订单"
+         android:textColor="@color/standard_grey"
+         android:textSize="12sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+   </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_daily_sale_count"
+       android:layout_weight="1"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:layout_width="0dp"
+       android:layout_height="match_parent">
+     <ImageView
+         android:background="@drawable/icon_data_daily_money"
+         android:layout_width="40dp"
+         android:layout_height="32dp" />
+     <TextView
+         android:layout_marginTop="12dp"
+         android:text="每日销售金额"
+         android:textColor="@color/standard_grey"
+         android:textSize="12sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+   </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_daily_order_source"
+       android:layout_weight="1"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:layout_width="0dp"
+       android:layout_height="match_parent">
+     <ImageView
+         android:background="@drawable/icon_order_resource"
+         android:layout_width="40dp"
+         android:layout_height="32dp" />
+     <TextView
+         android:layout_marginTop="12dp"
+         android:text="每日订单来源"
+         android:textColor="@color/standard_grey"
+         android:textSize="12sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+   </LinearLayout>
+  </LinearLayout>
+    <LinearLayout
+        android:background="@color/standard_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="119.5dp">
+        <LinearLayout
+            android:id="@+id/ll_data_24hours"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/icon_24hours"
+                android:layout_width="40dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="24小时销售图"
+                android:textColor="@color/standard_grey"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_week_data"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/icon_week"
+                android:layout_width="40dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="一周销售数据"
+                android:textColor="@color/standard_grey"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sugar_contain"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/icon_sugar_ratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="饮品含糖量"
+                android:textColor="@color/standard_grey"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_repeat_cost"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/icon_repeat_cost"
+                android:layout_width="40dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="用户重复消费"
+                android:textColor="@color/standard_grey"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/standard_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="119.5dp">
+        <LinearLayout
+            android:id="@+id/ll_drink_buy_ratio"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/icon_drink_ratio"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="饮品购买比例"
+                android:textColor="@color/standard_grey"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_user_comment"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/icon_comment"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:text="用户评价"
+                android:textColor="@color/standard_grey"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+  <LinearLayout
+      android:background="@color/standard_white"
+      android:layout_marginTop="10dp"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:text="运维数据"
+        android:textSize="15sp"
+        android:textColor="@color/heavy_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+  <include layout="@layout/item_line"/>
+  <LinearLayout
+      android:background="@color/standard_white"
+      android:layout_marginBottom="40dp"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="119.5dp">
+    <LinearLayout
+        android:id="@+id/ll_feed_overview"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+      <ImageView
+          android:src="@drawable/icon_data_feed_overview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:layout_marginTop="12dp"
+          android:text="加料总览"
+          android:textColor="@color/standard_grey"
+          android:textSize="12sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_material_waste"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+      <ImageView
+          android:src="@drawable/icon_data_material_waste"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:layout_marginTop="12dp"
+          android:text="物料消耗"
+          android:textColor="@color/standard_grey"
+          android:textSize="12sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+      <LinearLayout
+          android:id="@+id/ll_today_error"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:layout_width="0dp"
+          android:layout_height="match_parent">
+          <ImageView
+              android:src="@drawable/icon_today_error"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:layout_marginTop="12dp"
+              android:text="当天故障"
+              android:textColor="@color/standard_grey"
+              android:textSize="12sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_beakdown_counts"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+      <ImageView
+          android:src="@drawable/icon_data_breakdown_counts"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:layout_marginTop="12dp"
+          android:text="故障统计"
+          android:textColor="@color/standard_grey"
+          android:textSize="12sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
+  </ScrollView>
+    </LinearLayout>

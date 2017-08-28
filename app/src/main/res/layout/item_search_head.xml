@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="14dp"
+    android:background="@color/color_little_grey"
+    android:paddingBottom="4dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:text="我的搜索"
+    android:textSize="12sp"
+    android:textColor="@color/standard_grey"
+    android:layout_marginLeft="12.5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="10dp"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/view_add_material_head"
+        android:background="@color/color_little_grey"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <LinearLayout
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_materiall_name"
+            android:text="咖啡豆"
+            android:textColor="@color/standard_white"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@drawable/rect_waste_materail_name"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_material_value"
+            android:text="123146546克"
+            android:textColor="@color/standard_grey"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/rect_add_materail_value"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

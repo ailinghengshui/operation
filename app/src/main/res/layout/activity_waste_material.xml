@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_little_grey"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <LinearLayout
+         android:orientation="vertical"
+         android:id="@+id/ll_waste_material_container"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <LinearLayout
+             android:background="@drawable/rect_single_message"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="12dp"
+             android:layout_marginLeft="12dp"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:layout_height="39dp">
+             <RelativeLayout
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_centerInParent="true"
+                     android:textSize="15sp"
+                     android:textColor="@color/standard_white"
+                     android:text="名称"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <View
+                     android:layout_alignParentRight="true"
+                     android:background="@color/light_blue"
+                     android:layout_width="1dp"
+                     android:layout_height="match_parent"/>
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_centerInParent="true"
+                     android:textSize="15sp"
+                     android:textColor="@color/standard_white"
+                     android:text="常规消耗量"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <View
+                     android:layout_alignParentRight="true"
+                     android:background="@color/light_blue"
+                     android:layout_width="1dp"
+                     android:layout_height="match_parent"/>
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_centerInParent="true"
+                     android:textSize="15sp"
+                     android:textColor="@color/standard_white"
+                     android:text="额外消耗量"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <View
+                     android:layout_alignParentRight="true"
+                     android:background="@color/light_blue"
+                     android:layout_width="1dp"
+                     android:layout_height="match_parent"/>
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_centerInParent="true"
+                     android:textSize="15sp"
+                     android:textColor="@color/standard_white"
+                     android:text="总消耗量"
+                     android:textStyle="bold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+             </RelativeLayout>
+         </LinearLayout>
+     </LinearLayout>
+    </ScrollView>
+</LinearLayout>

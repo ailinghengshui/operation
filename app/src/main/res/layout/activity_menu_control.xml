@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+<include layout="@layout/titlebar"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/standard_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+          <LinearLayout
+              android:id="@+id/ll_menu_control_login"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="match_parent">
+              <ImageView
+                  android:id="@+id/iv_menu_control_login"
+                  android:src="@drawable/icon_login_in"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:id="@+id/tv_menu_control_login"
+                  android:layout_marginTop="5dp"
+                  android:textColor="@color/heavy_grey"
+                  android:textSize="14sp"
+                  android:text="@string/login_in"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_menu_control_error_histroy"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="match_parent">
+              <ImageView
+                  android:src="@drawable/icon_error_history"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:layout_marginTop="5dp"
+                  android:textColor="@color/heavy_grey"
+                  android:textSize="14sp"
+                  android:text="@string/error_history"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_menu_control_machine_info"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="match_parent">
+              <ImageView
+                  android:src="@drawable/icon_machine_info"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:layout_marginTop="5dp"
+                  android:textColor="@color/heavy_grey"
+                  android:textSize="14sp"
+                  android:text="@string/machine_info"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/item_line"/>
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <LinearLayout
+                android:id="@+id/ll_menu_control_polling"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_polling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/heavy_grey"
+                    android:textSize="14sp"
+                    android:text="@string/polling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
